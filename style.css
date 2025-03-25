@@ -21,9 +21,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     text-align: center;
+    padding-top: 20px;
 }
 
 /* Title */
@@ -31,44 +32,13 @@
     font-size: 3rem;
     color: white;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
-/* Search Box */
-.search-container {
-    display: flex;
-    width: 80%;
-    max-width: 400px;
-    background: white;
-    border-radius: 25px;
-    padding: 5px;
-    margin-bottom: 20px;
-}
-
-.search-box {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 20px;
-}
-
-.search-btn {
-    background: #0f3460;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-/* Horizontal Navigation Bar */
+/* Navigation Bar */
 .nav-bar {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .nav-bar a {
@@ -76,11 +46,50 @@
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px 15px;
-    border-radius: 5px;
     background: rgba(255, 255, 255, 0.2);
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .nav-bar a:hover {
     background: rgba(255, 255, 255, 0.4);
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    color: white;
+    width: 80%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* Charts */
+.chart-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background: gray;
+    border-radius: 10px;
+    width: 100%;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background: limegreen;
+    border-radius: 10px;
 }
